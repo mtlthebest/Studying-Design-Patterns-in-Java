@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-2.0.dtd" >
+<hibernate-configuration>
+<session-factory>
+        <!--MySQL JDBC Driver connection -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver
+        </property>
+        <property name="connection.url">jdbc:mysql:///test</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">893hata</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect
+        </property>
+        <property name="show_sql">true</property>
+        <property name="use_outer_join">true</property>
+        <!-- Mapping files -->
+        <mapping resource="EMP.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
